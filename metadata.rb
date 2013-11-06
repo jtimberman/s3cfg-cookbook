@@ -1,0 +1,6 @@
+name             's3cfg'
+maintainer       'Joshua Timberman'
+maintainer_email 'joshua@opscode.com'
+license          'Apache v2'
+description      'Manages config files for s3cmd'
+version          '0.1.0'
