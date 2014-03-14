@@ -31,6 +31,7 @@ the path specified by the name or path attribute.
 * `path` - path to the s3cfg file to render
 * `access_key` - AWS access key id
 * `secret_key` - AWS secret access key
+* `access_token` - AWS security token
 * `host_bucket` - Override the default bucket name. Should be the full
   FQDN, e.g., `mybucket.s3.amazonaws.com`.
 * `install_s3cmd` - Whether the `s3cmd` package should be installed.
@@ -47,8 +48,8 @@ the path specified by the name or path attribute.
 * `source` - passed to the `source` attribute of the template, default `s3cfg.erb`
 * `config` - Hash of configuration overrides that will be merged with
   the `node['s3cfg']['config']` attributes to dynamically render in
-  `s3cfg.erb`. Note that `access_key`, `secret_key` and `host_bucket`
-  are added to this.
+  `s3cfg.erb`. Note that `access_key`, `secret_key`, `access_token` and
+  `host_bucket` are added to this.
 
 ## Usage
 

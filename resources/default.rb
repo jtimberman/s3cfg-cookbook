@@ -29,5 +29,6 @@ attribute :install_s3cmd, :kind_of => [FalseClass, TrueClass, NilClass], :defaul
 attribute :mode, :kind_of => [String, Fixnum], :default => 00600
 attribute :owner, :kind_of => String, :default => nil
 attribute :secret_key, :kind_of => String, :default => nil, :required => true
+attribute :access_token, :kind_of => String, :default => nil
 attribute :source, :kind_of => String, :default => "s3cfg.erb"
 attribute :variables, :kind_of => Hash, :default => {}
