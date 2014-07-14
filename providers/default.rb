@@ -43,6 +43,7 @@ def render_s3cfg_template(_action)
     group new_resource.group
     mode new_resource.mode
     action _action
+    sensitive true
     variables :config_options => config_options
   end
 end
