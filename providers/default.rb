@@ -51,6 +51,7 @@ end
 def config_options
   new_resource.config['access_key'] = new_resource.access_key
   new_resource.config['secret_key'] = new_resource.secret_key
+  new_resource.config['access_token'] = new_resource.access_token
   new_resource.config['host_bucket'] = new_resource.host_bucket
   node['s3cfg']['config'].to_hash.merge!(new_resource.config)
 end
