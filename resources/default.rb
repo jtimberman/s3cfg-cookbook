@@ -31,3 +31,4 @@ attribute :owner, :kind_of => String, :default => nil
 attribute :secret_key, :kind_of => String, :default => nil, :required => true
 attribute :source, :kind_of => String, :default => "s3cfg.erb"
 attribute :variables, :kind_of => Hash, :default => {}
+attribute :gpg_passphrase, :kind_of => String, :default => nil

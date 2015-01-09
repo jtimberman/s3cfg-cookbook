@@ -47,8 +47,9 @@ the path specified by the name or path attribute.
 * `source` - passed to the `source` attribute of the template, default `s3cfg.erb`
 * `config` - Hash of configuration overrides that will be merged with
   the `node['s3cfg']['config']` attributes to dynamically render in
-  `s3cfg.erb`. Note that `access_key`, `secret_key` and `host_bucket`
-  are added to this.
+  `s3cfg.erb`. Note that `access_key`, `secret_key`, `host_bucket`,
+  and `gpg_passphrase` are added to this.
+* `gpg_passphrase` - GPG passphrase used for encryption
 
 ## Usage
 
